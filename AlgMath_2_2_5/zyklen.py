@@ -1,12 +1,17 @@
+"""Abschrift aus Skript."""
 
-N = [1,2,3,4,5,6,7]
-sigma = [0,4,7,6,1,2,3,5]
+def main():
+    '''Das was im Skript steht'''
+    numbers = [1, 2, 3, 4, 5, 6, 7]
+    sigma = [0, 4, 7, 6, 1, 2, 3, 5]
+    for num in numbers:
+        print
+        current = num
+        print current,
+        while sigma[current] != num:
+            current = sigma[current]
+            print current,
+            numbers.remove(current)
 
-for a in N:
-    print
-    b=a
-    print b,
-    while sigma[b] != a:
-        b=sigma[b]
-        print b,
-        N.remove(b)
+if __name__ == '__main__':
+    main()
